@@ -41,8 +41,7 @@ export class University {
   }
 
   public addStudent(student: Student): boolean {
-    const checkStudent = this.students.includes(student);
-    if (checkStudent) {
+    if (this.students.includes(student)) {
       return false;
     } else {
       this.students.push(student);
